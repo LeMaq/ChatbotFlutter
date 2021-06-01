@@ -6,6 +6,7 @@ import 'package:chatbot/AboutScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'GotoChat.dart' as Chat;
+import 'Go to Sobre.dart' as Sobre;
 
 void main() => runApp(MyApp());
 
@@ -41,7 +42,7 @@ class Home extends StatelessWidget {
                 style: ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20),
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10)),
                 onPressed: () {
-                  Chat.GoToChat();
+                  Sobre.GoToSobre();
                 },
               ),
                   ],

@@ -1,8 +1,8 @@
-import 'package:chatbot/home_screen.dart' as home;
+import 'package:chatbot/Sobre.dart' as home;
 import 'package:flutter/material.dart';
 
 // ignore: non_constant_identifier_names
-void GoToChat() => runApp(MyApp());
+void GoToSobre() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
 
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner:  false,
       title : "Thera.py",
-      home : home.HomeScreen(),
+      home : home.Sobre(),
     );
   }
 
