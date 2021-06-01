@@ -30,19 +30,22 @@ class Sobre extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Align(alignment: Alignment.center,),
-              SizedBox(height: 70),
+              SizedBox(height: 30),
               Image.asset('Assets\\logo1.png',  width : 150 , height: 200),
-              SizedBox(height: 50),
+              SizedBox(height: 20),
+              Align(alignment: Alignment.center,),
               Text(
                 "Sobre o projeto!",
-                style : TextStyle (fontSize: 60, color: Color.fromARGB(
+                  textAlign: TextAlign.center,
+                style : TextStyle (fontSize: 50, color: Color.fromARGB(
                     255, 28, 121, 121)),
               ),
               SizedBox(height: 50),
 
               Text(
                 "Thera.py é um aplicativo mobilepara conversas terapêutica pormeio de uma InteligênciaArtificial (IA). O chatbot interagecom o usuário além de lheoferecer dicas para ajudar emmomentos de stress, ansiedadee nervosismo.",
-                style : TextStyle (fontSize: 30, color: Color.fromARGB(
+                  textAlign: TextAlign.center,
+                style : TextStyle (fontSize: 24, color: Color.fromARGB(
                     255, 28, 121, 121)),
               ),
             ],
