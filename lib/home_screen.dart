@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:bubble/bubble.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:chatbot/Home.dart' as mainScreen;
 class HomeScreen extends StatefulWidget
 {
   @override
@@ -21,11 +22,17 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 213, 255, 255),
+      backgroundColor: Color.fromARGB(255, 162, 205, 205),
       appBar: AppBar(
         backgroundColor: Colors.lightBlueAccent,
         centerTitle: true,
-        title: Text("Thera.py"),
+        leading: IconButton (
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            mainScreen.main();
+          },
+        ),
+        title: Image.asset('Assets\\logo2.png', width: 200, height:  100, ),
       ),
       body: Stack(
         children: <Widget>[
