@@ -4,7 +4,9 @@ import 'package:flutter/foundation.dart';
 import 'package:bubble/bubble.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:chatbot/Home.dart' as mainScreen;
+import 'package:chatbot/main.dart' as mainScreen;
+
+
 class HomeScreen extends StatefulWidget
 {
   @override

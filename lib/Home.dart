@@ -5,12 +5,11 @@
 import 'package:chatbot/AboutScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'main.dart' as Chat;
-import 'home_screen.dart';
+import 'GotoChat.dart' as Chat;
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -33,7 +32,7 @@ class MyApp extends StatelessWidget {
                 style: ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20),
                     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
                   onPressed: () {
-                    Chat.main();
+                    Chat.GoToChat();
                   },
               ),
               SizedBox(height: 50),
@@ -42,7 +41,7 @@ class MyApp extends StatelessWidget {
                 style: ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20),
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10)),
                 onPressed: () {
-                  Chat.main();
+                  Chat.GoToChat();
                 },
               ),
                   ],

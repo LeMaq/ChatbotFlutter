@@ -1,7 +1,7 @@
-import 'package:chatbot/Home.dart' as home;
+import 'package:chatbot/home_screen.dart' as home;
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void GoToChat() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner:  false,
       title : "Thera.py",
-      home : home.Home(),
+      home : home.HomeScreen(),
     );
   }
 
